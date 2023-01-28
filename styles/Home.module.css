@@ -1,0 +1,129 @@
+.colorBG {
+  background-color: #f8f8f8;
+  padding: 2.5rem 0 2.5rem 0;
+}
+
+.divBorder {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(0, 0, 0, var(--tw-border-opacity));
+  border-style: solid;
+}
+
+.pageHeading {
+  display: flex;
+  font-size: 1.875rem /* 30px */;
+  line-height: 2.25rem /* 36px */;
+  margin: 2.5rem 2.5rem 5rem 2.5rem;
+}
+
+.cartGrid {
+  display: grid;
+}
+
+.cart {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.divBorder {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(0, 0, 0, var(--tw-border-opacity));
+  border-style: solid;
+  margin-bottom: 3em;
+}
+
+.cartItem {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px;
+  font-family: ToucheBold;
+}
+
+.cartItemCover {
+  width: 80%;
+  margin: 1em;
+  cursor: pointer;
+}
+
+.cartNameNPrice {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  align-self: center;
+}
+
+.cartNameNPriceEnd {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  align-self: center;
+  margin-right: 20px;
+}
+
+.cartQuantityCount {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  margin: 1.5em;
+  font-family: ToucheBold;
+  font-size: 1.5em;
+}
+
+.cartUpdateQuantity {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cartActionBtn {
+  display: flex;
+  align-self: flex-end;
+  justify-self: end;
+  margin: 1rem /* 16px */;
+  gap: 1rem /* 16px */;
+}
+
+.cartActionBtn button {
+  gap: 1rem /* 16px */;
+  padding: 1rem /* 16px */;
+}
+
+.stringNicon {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.cartDeleteBtn {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+  padding: 1rem /* 16px */;
+}
+
+@media (min-width: 1024px) {
+  .pageHeading {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cartHeading {
+    justify-content: center;
+  }
+  .cartItem {
+    grid-template-columns: 20% 60% 20%;
+  }
+  .cartGrid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .checkOutGrid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
